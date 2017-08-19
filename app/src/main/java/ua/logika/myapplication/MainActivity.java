@@ -34,14 +34,12 @@ public class MainActivity extends AppCompatActivity {
         //move to
         IMapController mapController = map.getController();
         mapController.setZoom(9);
-        GeoPoint startPoint = new GeoPoint(0.0d,0.0d);
+        GeoPoint startPoint = new GeoPoint(50.0d,30.0d);
         mapController.setCenter(startPoint);
-
-
 
         //your items
         ArrayList<OverlayItem> items = new ArrayList<OverlayItem>();
-        items.add(new OverlayItem("Title", "Description", new GeoPoint(0.0d,0.0d))); // Lat/Lon decimal degrees
+        items.add(new OverlayItem("Title", "Description", new GeoPoint(50.0d,30.0d))); // Lat/Lon decimal degrees
 
 //the overlay
         ItemizedOverlayWithFocus<OverlayItem> mOverlay = new ItemizedOverlayWithFocus<OverlayItem>(
